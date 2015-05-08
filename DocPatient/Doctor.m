@@ -18,7 +18,7 @@
     if (self){
         self.name = name;
         self.specialization = specialization;
-        _patients = [[NSMutableArray alloc] init];
+        _patients = [NSMutableArray array];
         _prescriptions = @{
                            @"pain" : @"asprin",
                            @"stomachache" : @"pepto",
@@ -35,7 +35,7 @@
 -(BOOL) acceptPatient:(Patient *) patient {
     if (patient.healthCard == YES) {
         [_patients addObject:patient];
-        NSLog(@"accepted");
+        NSLog(@"You are accepted");
         return YES;
     } else {
         
@@ -46,21 +46,21 @@
 
 -(void) giveMedicine:(Patient *)patient {
     if ([_patients containsObject:patient]) {
-        NSLog(@"What is your symptom?");
+        NSLog(@"What is your symptom?\n");
         
-        NSLog(@"Patient symptom is  %@", patient.symptom);
+        NSLog(@"Patient symptom is  %@\n", patient.symptom);
         
         NSString* prescription = [_prescriptions valueForKey:patient.symptom];
         
         if (prescription == nil) {
-            NSLog(@"Sorry nothing for your symptom %@", patient.symptom);
+            NSLog(@"Sorry nothing for your symptom %@\n", patient.symptom);
         } else {
-            NSLog(@"Here you go! have a %@", prescription);
-            [_patients addObject: prescription];
+            NSLog(@"Here you go! have a %@\n", prescription);
+            [patient addPrescription:prescription];
         }
     }
     else {
-        NSLog(@"Sorry, your not in my list");
+        NSLog(@"Sorry, your not in my list\n");
     }
 }
 

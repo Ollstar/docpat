@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>BDA7E1E0-A12C-4D15-AEBA-F40A5B9A7130</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DocPatient</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>B6B81D87D29E6D9A20E4763319A89015D137E4D4</key>
+		<string>https://github.com/Ollstar/docpat.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DocPatient.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>B6B81D87D29E6D9A20E4763319A89015D137E4D4</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Ollstar/docpat.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>B6B81D87D29E6D9A20E4763319A89015D137E4D4</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>B6B81D87D29E6D9A20E4763319A89015D137E4D4</string>
+			<key>IDESourceControlWCCName</key>
+			<string>DocPatient</string>
+		</dict>
+	</array>
+</dict>
+</plist>

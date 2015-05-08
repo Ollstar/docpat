@@ -9,7 +9,15 @@
 #import "Patient.h"
 #import "Doctor.h"
 
+@interface Patient()
+
+@property (nonatomic) NSMutableArray *prescriptions;
+
+@end
+
 @implementation Patient
+
+
 
 -(instancetype) initWithName:(NSString*)name andAge:(int)age andHealthCard:(BOOL)healthCard andSymptom:(NSString *)symptom {
     self = [super init];
@@ -19,12 +27,17 @@
         self.age = age;
         self.healthCard = healthCard;
         self.symptom = symptom;
+        self.prescriptions = [NSMutableArray array];
     }
     
     return self;
-    
-
 
 }
+
+-(void) addPrescription:(NSString *)prescription {
+    [self.prescriptions addObject:(prescription)];
+    NSLog(@"My prescription list includes %@\n",self.prescriptions);
+}
+
 
 @end

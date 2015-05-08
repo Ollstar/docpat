@@ -17,6 +17,6 @@
 @property(nonatomic,strong) NSString* symptom;
 
 -(instancetype) initWithName:(NSString*)name andAge:(int)age andHealthCard:(BOOL)healthCard andSymptom:(NSString*)symptom;
-
+-(void) addPrescription:(NSString *)prescription;
 
 @end
